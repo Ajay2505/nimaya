@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+    font-family: "monument_extendedultrabold";
+    src: url("../fonts/monument-extended/monumentextended-ultrabold-webfont.woff2") format("woff2"), url("../fonts/monument-extended/monumentextended-ultrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "monument_extendedregular";
+    src: url("../fonts/monument-extended/monumentextended-regular-webfont.woff2") format("woff2"), url("../fonts/monument-extended/monumentextended-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voireblack";
+    src: url("../fonts/voire/voire-black-webfont.woff2") format("woff2"), url("../fonts/voire/voire-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voirebold";
+    src: url("../fonts/voire/voire-bold-webfont.woff2") format("woff2"), url("../fonts/voire/voire-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voireextrabold";
+    src: url("../fonts/voire/voire-extrabold-webfont.woff2") format("woff2"), url("../fonts/voire/voire-extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voireextralight";
+    src: url("../fonts/voire/voire-extralight-webfont.woff2") format("woff2"), url("../fonts/voire/voire-extralight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voirelight";
+    src: url("../fonts/voire/voire-light-webfont.woff2") format("woff2"), url("../fonts/voire/voire-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voiremedium";
+    src: url("../fonts/voire/voire-medium-webfont.woff2") format("woff2"), url("../fonts/voire/voire-medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voireregular";
+    src: url("../fonts/voire/voire-regular-webfont.woff2") format("woff2"), url("../fonts/voire/voire-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voiresemibold";
+    src: url("../fonts/voire/voire-semibold-webfont.woff2") format("woff2"), url("../fonts/voire/voire-semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "voirethin";
+    src: url("../fonts/voire/voire-thin-webfont.woff2") format("woff2"), url("../fonts/voire/voire-thin-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --background-color: #fff6f4;
+    --font-color: #141414;
+    --accent-lavender: #fcd7d2;
+    --accent-purple: #ff928f;
+    --accent-orange: #ef3f3f;
+    --text-voilet: #685BDE;
+    --border-color: #f8b1ae;
+    --text-green: #1F4F43;
+    --monument-extended-regular: "monument_extendedregular";
+    --monument-extended-extrabold: "monument_extendedultrabold";
+    --voire-black: "voireblack";
+    --voire-bold: "voirebold";
+    --poppins: "Poppins", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--poppins);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-family: var(--voire-bold);
+}
+
+img,
+svg {
+    width: 100%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.row {
+    row-gap: 30px;
+}
+
+.main_spacer {
+    padding-block: 100px;
+}
+
+.main_spacer_top {
+    padding-top: 100px;
+}
+
+.large_heading {
+    font-size: clamp(30px, 5vw, 70px);
+}
+
+.main_heading {
+    font-size: clamp(30px, 5vw, 55px);
+}
+
+.sub_heading {
+    font-size: clamp(20px, 5vw, 35px);
+}
+
+header .logo_wrapper,
+footer .logo_wrapper  {
+    max-width: 130px;
+}
+
+header .last a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+    font-family: var(--monument-extended-regular);
+}
+
+header .last a:hover {
+    text-decoration: underline;
+}
+
+section.main_section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('https://unicamp.thememove.com/main/wp-content/uploads/sites/2/2021/03/home-03-hero-bg.jpg');
+}
+
+section.main_section .icon_wrapper {
+    width: 50px;    
+    height: 50px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+section.main_section .icon_wrapper svg {
+    color: var(--accent-orange);
+}
+
+.linkedImagesWrapper .steps .step {
+    opacity: .4;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+.linkedImagesWrapper .steps .step.active {
+    opacity: 1;
+}
+
+.linkedImagesWrapper .steps .step .num {
+    transition: color .3s ease-in-out;
+}
+
+.linkedImagesWrapper .steps .step.active .num {
+    color: var(--accent-orange);
+}
+
+.linkedImagesWrapper .img_wrapper img {
+    opacity: 0;
+    transform: scale(.9);
+    transition: opacity .5s ease-in-out, transform .4s ease-in-out;
+}
+
+.linkedImagesWrapper .img_wrapper img.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.backToTop {
+    display: inline-block;
+    position: fixed;
+    right: -100px;
+    bottom: 30px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 3px solid var(--border-color);
+    background-color: var(--accent-orange);
+    transform: scale(0);
+    transition: right .4s ease-in-out, transform .5s ease-in-out;
+}
+
+.backToTop:hover {
+    color: #fff;
+}
+
+.backToTop.active {
+    right: 30px;
+    transform: scale(1);
+}
+
+.highlights_section {
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 0 60%;
+    background-image: url("https://nimaya.in/assets/images/logo-icon-bg-3.png");
+}
+
+.highlightsGrid {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.highlightsGrid > * {
+    width: 100%;
+    height: 100%;
+    max-width: 350px;
+    padding: 25px;
+    min-height: 300px;    
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-orange);
+    transition: box-shadow .3s ease-in-out, background-color .3s ease-in;
+}
+
+.highlightsGrid .img_wrapper {
+    max-width: 140px;
+}
+
+.highlightsGrid > *:hover {
+    -webkit-box-shadow: 0 3px 30px rgba(0,0,0,0.05);
+    -ms-box-shadow: 0 3px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 30px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.video.icon_wrapper {
+    position: relative;
+}
+
+.video.icon_wrapper::before,
+.video.icon_wrapper::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    animation-name: videoloader; 
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.video.icon_wrapper::after {
+    animation-delay: 1.5s;
+}
+
+@keyframes videoloader {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+footer {
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+footer .links {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+    color: var(--accent-orange);
+    font-family: var(--monument-extended-regular);
+}
