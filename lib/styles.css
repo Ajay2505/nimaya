@@ -253,20 +253,62 @@ section.main_section .icon_wrapper svg {
     background-image: url("https://nimaya.in/assets/images/logo-icon-bg-3.png");
 }
 
-.highlightsGrid {    
+.highlightsGrid,
+.learn_cards,
+.curve_cards {    
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
 
+.curve_cards {
+    gap: 0px;
+}
+
+.curve_cards .card_itself {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curve_cards .card_itself h5 {
+    color: var(--accent-orange);
+}
+
+.curve_cards .card_itself .img_wrapper {
+    max-width: 90px;
+}
+
+.curve_cards .card_itself .curve {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.curve_cards .card_itself .curve::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 10px solid var(--border-color);
+}
+
+.curve_cards .card_itself .curve.top::before {
+    transform: translate(-50%, 50%);
+}
+
 
 .highlightsGrid > * {
     width: 100%;
-    height: 100%;
     max-width: 300px;
     padding: 25px;
-    min-height: 300px;    
     display: grid;
     place-items: center;
     border-radius: 12px;
@@ -288,6 +330,24 @@ section.main_section .icon_wrapper svg {
 
 .highlightsGrid > * p {
     text-align: center;
+}
+
+.learn_cards {
+    width: 100%;
+    gap: 20px;
+}
+
+.learn_cards .card_itself {
+    min-width: 250px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #ef3f3fc9;
+}
+
+.learn_cards .card_itself .img_wrapper {
+    max-width: 100px;
 }
 
 .video.icon_wrapper {
