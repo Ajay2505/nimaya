@@ -437,7 +437,7 @@ footer .links a:hover {
 .accordian_section .accordion-item:first-child {
     background-color: transparent;
     border-top: 3px solid var(--accent-purple);
-    padding-block: 10px;
+    /* padding-block: 10px; */
 }
 
 .accordian_section .accordion-item .accordion-button {
@@ -483,7 +483,7 @@ footer .links a:hover {
 
 .accordian_section .accordion-item .accordion-button .left h2 {
     font-family: var(--monument-extended-regular);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     padding-right: 40px;
     color: var(--accent-orange);
