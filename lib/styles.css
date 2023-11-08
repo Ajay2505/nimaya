@@ -230,6 +230,7 @@ section.main_section .icon_wrapper svg {
 
 .backToTop {
     display: inline-block;
+    z-index: 20;
     position: fixed;
     right: -100px;
     bottom: 30px;
@@ -525,6 +526,7 @@ footer .links a:hover {
     width: 100%;
     flex: 1;
     min-width: 250px;
+    max-width: 250px;
     background-color: #fff;
 }
 
@@ -555,6 +557,7 @@ footer .links a:hover {
     font-weight: 500;
     /* border-radius: 12px; */
     background-color: var(--accent-orange);
+    
 }
 
 .fixedBtn:hover {
@@ -564,11 +567,12 @@ footer .links a:hover {
 .course_cards .card_itself {
     width: 100%;
     flex: 1;
+    min-width: 200px;
     padding: 25px;
     border-radius: 12px;
     position: relative;
     background-color: #fff;
-    transition: box-shadow .3s ease-in-out, background-color .3s ease-in;
+    transition: box-shadow .3s ease-in-out, background-color .3s ease-in, color .4s ease-in;
 }
 
 .course_cards .card_itself .absolute_block {
@@ -578,10 +582,11 @@ footer .links a:hover {
     bottom: 0;
     border-radius: 12px;
     padding: 25px;
-    background-color: #fff;
     transform-origin: top top;
     opacity: 0;
     transform: scaleY(0) translateY(100%);
+    /* color: #fff; */
+    background-color: var(--accent-purple);
     transition: transform .3s ease-in-out, opacity .4s ease-in-out;
 }
 
@@ -597,6 +602,10 @@ footer .links a:hover {
 }
 
 .course_cards .card_itself:hover {
+    /* color: #fff; */
+    /* background-color: var(--accent-orange); */
+    background-color: var(--accent-purple);
+
     -webkit-box-shadow: 0 3px 30px rgba(0,0,0,0.05);
     -ms-box-shadow: 0 3px 30px rgba(0,0,0,0.05);
     box-shadow: 0 3px 30px rgba(0,0,0,0.05);
