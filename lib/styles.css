@@ -137,12 +137,16 @@ svg {
     padding-top: 100px;
 }
 
+.main_spacer_bottom {
+    padding-bottom: 100px;
+}
+
 .large_heading {
     font-size: clamp(30px, 5vw, 70px);
 }
 
 .main_heading {
-    font-size: clamp(30px, 5vw, 55px);
+    font-size: clamp(30px, 5vw, 40px);
 }
 
 .sub_heading {
@@ -250,7 +254,7 @@ section.main_section .icon_wrapper svg {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 0 60%;
-    background-image: url("https://nimaya.in/assets/images/logo-icon-bg-3.png");
+    /* background-image: url("https://nimaya.in/assets/images/logo-icon-bg-3.png"); */
 }
 
 .highlightsGrid,
@@ -318,7 +322,7 @@ section.main_section .icon_wrapper svg {
 }
 
 .highlightsGrid .img_wrapper {
-    max-width: 140px;
+    max-width: 100px;
 }
 
 .highlightsGrid > *:hover {
@@ -341,7 +345,7 @@ section.main_section .icon_wrapper svg {
     min-width: 250px;
     flex: 1;
     padding: 20px;
-    border-radius: 0;
+    border-radius: 12px;
     color: #fff;
     background-color: #ef3f3fc9;
 }
@@ -399,4 +403,27 @@ footer .links {
 
 footer .links a:hover {
     text-decoration: underline;
+}
+
+.learn_main {
+    /* max-width: 900px; */
+    margin: 0 auto;
+}
+
+.learn_main .img_wrapper {
+    max-width: 200px;
+}
+
+.learn_main .card_itself {
+    padding: 25px;
+}
+
+.learn_main .card_itself:not(:last-child) {
+    border-right: 1px solid;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #29292924 50%) 1 100%;
+}
+
+.learn_main .card_itself p {
+    font-weight: 500;
+    text-align: center;
 }
