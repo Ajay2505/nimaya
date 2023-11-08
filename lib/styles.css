@@ -609,10 +609,28 @@ footer .links a:hover {
 #registerModal .modal-dialog .modal-content {
     max-height: 90vh;
     overflow-y: auto;
+    background-color: var(--background-color);
+}
+
+#registerModal .modal-dialog .modal-content .swiper-slide {
+    height: 100%;
+}
+
+#registerForm,
+.main_form {
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid var(--accent-orange);
+    /* background-image: url('https://nimaya.in/assets/images/form-background.png'); */
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #registerForm input,
-#registerForm select {
+#registerForm select,
+.main_form input,
+.main_form select {
     display: block;
     width: 100%;
     outline: none;
@@ -628,6 +646,48 @@ footer .links a:hover {
     font-size: 18px;
 }
 
-#registerForm select {
+#registerForm select,
+.main_form select {
     padding: 0;
+    opacity: .6;
+}
+
+#registerForm select.active,
+.main_form select.active {
+    opacity: 1;
+}
+
+.btn_main {
+    border: 2px solid var(--accent-orange);
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: block;
+    margin-top: 20px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: transparent;
+    font-family: var(--monument-extended-regular);
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+.btn_main:hover {
+    background-color: var(--accent-orange);
+    color: #fff;
+}
+
+.main_form input[type=checkbox] {
+    max-width: 20px;
+    max-height: 20px;
+    border: 1px solid var(--accent-orange);
+}
+
+.main_form input[type=checkbox]:checked {
+    background-color: var(--accent-orange);
+}
+
+.main_form input[type=checkbox]:focus {
+    box-shadow: none;
 }

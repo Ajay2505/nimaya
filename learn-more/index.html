@@ -32,7 +32,7 @@
         </svg>
     </a>
 
-    <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" class="fixedBtn">Register Now</a>
+    <a href="#" id="registerModalBtn" data-bs-toggle="modal" data-bs-target="#registerModal" class="fixedBtn">Register Now</a>
 
     <section class="learn_main main_spacer_bottom pt-5">
         <div class="container">
@@ -476,73 +476,114 @@
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="registerModalLabel">Register Now</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <form class="px-lg-5 px-3" id="registerForm">
-                            <input type="text" placeholder="Full Name">
-                            <input type="number" placeholder="Contact Number" minlength="9">
-                            <input type="email" placeholder="Email ID">
-                            <input type="text" placeholder="Address">
-                            <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">
-                                <input type="number" min="1" placeholder="Age">
-                                <select name="" id="">
-                                    <option value="0" selected disabled>Select a gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Female">Female</option>
-                                    <option value="Trasgender">Trasgender</option>
-                                    <option value="Others">Others</option>
-                                </select>                    
+                <div class="swiper registerForm">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-lg-6 mx-auto">
+                                    <form class="px-lg-5 px-3" id="registerForm">
+                                        <h2 class="modal-title fs-4" id="registerModalLabel">Register Now</h2>
+                                        <br>
+                                        <input required type="text" placeholder="Full Name">
+                                        <input required type="number" placeholder="Contact Number" minlength="9">
+                                        <input required type="email" placeholder="Email ID">
+                                        <input required type="text" placeholder="Address">
+                                        <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">
+                                            <input required type="number" min="1" placeholder="Age">
+                                            <select name="" id="">
+                                                <option value="0" selected disabled>Select a gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Trasgender">Trasgender</option>
+                                                <option value="Others">Others</option>
+                                            </select>                    
+                                        </div>
+                                        <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">                        
+                                            <select name="" id="">
+                                                <option value="0" selected disabled>Current Occupation</option>
+                                                <option value="Studying">Studying</option>
+                                                <option value="Working">Working</option>
+                                                <option value="Not working">Not working</option>
+                                                <option value="Self Employed">Self Employed</option>
+                                                <option value="Others">Others</option>
+                                            </select>                    
+                                        </div>
+                                        <input required type="text" placeholder="Area of education (eg. IT, Commerce, Design, etc)">
+                                        <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">                        
+                                            <select name="" id="">
+                                                <option value="0" selected disabled>Level of education</option>
+                                                <option value="10">10th Standard</option>
+                                                <option value="Working">Working</option>
+                                                <option value="Not working">Not working</option>
+                                                <option value="Self Employed">Self Employed</option>
+                                                <option value="Others">Others</option>
+                                            </select> 
+                                            <select name="" id="">
+                                                <option value="0" selected disabled>Annual Family Income</option>
+                                                <option value="Less than Rs. 3,00,000 per annum">Less than Rs. 3,00,000 per annum</option>
+                                                <option value="Rs. 3,00,000 to Rs. 6,00,000 per annum">Rs. 3,00,000 to Rs. 6,00,000 per annum</option>
+                                                <option value="Rs. 6,00,001 to Rs. 10,00,000 per annum">Rs. 6,00,001 to Rs. 10,00,000 per annum</option>
+                                                <option value="Above Rs. 10,00,000 per annum">Above Rs. 10,00,000 per annum</option>
+                                            </select>                    
+                                        </div>
+                                        <input required type="text" placeholder="Please share a short paragraph about yourself">
+                                        <input required type="text" placeholder="Why do you want to join the Smart Fellowship?">
+                                        <button type="submit" class="btn_main">Select Batch</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">                        
-                                <select name="" id="">
-                                    <option value="0" selected disabled>Current Occupation</option>
-                                    <option value="Studying">Studying</option>
-                                    <option value="Working">Working</option>
-                                    <option value="Not working">Not working</option>
-                                    <option value="Self Employed">Self Employed</option>
-                                    <option value="Others">Others</option>
-                                </select>                    
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-lg-6 mx-auto">
+                                    <form class="px-lg-5 px-3 main_form" id="batchForm">
+                                        <h5 class="modal-title" id="registerModalLabel">Select Preferred Batch:</h5>
+                                        <br>
+                                        <select required name="" id="">
+                                            <option value="0" selected disabled>Batch</option>
+                                            <option value="1">9th December 2023 to 13th January 2024</option>
+                                            <option value="2">18th December 2023  to 22nd January 2024</option>
+                                            <option value="3">6th January 2024 to 10th February 2024</option>
+                                        </select> 
+                                        <h5>Declaration:</h5>
+                                        <div class="d-flex gap-3">
+                                            <input required id="dec01" type="checkbox" class="form-check-input">
+                                            <label for="dec01">I agree that the information provided by me is true and correct. Any discrepancy or inability to verify the same can lead to the rejection of my application.</label>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <input required id="dec02" type="checkbox" class="form-check-input">
+                                            <label for="dec02">I agree to attend at least 80% of all sessions to be eligible for course completion</label>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <input required id="dec03" type="checkbox" class="form-check-input">
+                                            <label for="dec03">I understand that the Smart Fellowship is a free-of-cost soft skills training program for my professional development. Nimaya, Workverse, Escorts Kubota and any other partner in this initiative does not guarantee any job or placement.</label>
+                                        </div>
+                                        <button type="submit" class="btn_main">Confirm</button>
+                                    </form>
+                                    <button id="backToRegister" class="btn_main m-0 mt-lg-5 mt-3 ms-auto">Back to Previous page</button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="img_wrapper">
+                                        <img src="https://www.incorlakecity.com/assets/images/floor-plans/2bhk-tower2-west-facing.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <input type="text" placeholder="Area of education (eg. IT, Commerce, Design, etc)">
-                            <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">                        
-                                <select name="" id="">
-                                    <option value="0" selected disabled>Level of education</option>
-                                    <option value="10">10th Standard</option>
-                                    <option value="Working">Working</option>
-                                    <option value="Not working">Not working</option>
-                                    <option value="Self Employed">Self Employed</option>
-                                    <option value="Others">Others</option>
-                                </select> 
-                                <select name="" id="">
-                                    <option value="0" selected disabled>Annual Family Income</option>
-                                    <option value="10">10th Standard</option>
-                                    <option value="Working">Working</option>
-                                    <option value="Not working">Not working</option>
-                                    <option value="Self Employed">Self Employed</option>
-                                    <option value="Others">Others</option>
-                                </select>                    
-                            </div>
-                            <input type="text" placeholder="Please share a short paragraph about yourself">
-                            <input type="text" placeholder="Why do you want to join the Smart Fellowship?">
-                        </form>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="img_wrapper">
-                            <img src="https://www.incorlakecity.com/assets/images/floor-plans/2bhk-tower2-west-facing.jpg" alt="">
                         </div>
                     </div>
                 </div>
+                
                 
             </div>
           </div>
         </div>
     </div>
 
+    <script src="../lib/swiper/swiper-bundle.min.js"></script>
     <script src="../lib/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../lib/script.js"></script>
 </body>
