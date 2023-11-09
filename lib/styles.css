@@ -327,7 +327,7 @@ section.main_section .icon_wrapper svg {
 }
 
 .highlightsGrid .img_wrapper {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .highlightsGrid > *:hover {
@@ -356,7 +356,7 @@ section.main_section .icon_wrapper svg {
 }
 
 .learn_cards .card_itself .img_wrapper {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .video.icon_wrapper {
