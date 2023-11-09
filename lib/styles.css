@@ -527,23 +527,34 @@ footer .links a:hover {
     flex: 1;
     min-width: 250px;
     max-width: 250px;
+}
+
+.accordian_section .accordian_cards .swiper-slide {
     background-color: #fff;
 }
 
-.accordian_section .accordian_cards .card_itself .card_content {
+.accordian_section .accordian_cards .swiper-slide .card_content {
     padding: 25px;
 }
 
-.accordian_section .accordian_cards .card_itself .img_wrapper {
+.accordian_section .accordian_cards .swiper-slide .img_wrapper {
     overflow: hidden;
 }
 
-.accordian_section .accordian_cards .card_itself .img_wrapper img {
+.accordian_section .accordian_cards .swiper-slide .img_wrapper img {
     transition: transform .3s ease-in;
 }
 
-.accordian_section .accordian_cards .card_itself:hover .img_wrapper img {
+.accordian_section .accordian_cards .swiper-slide:hover .img_wrapper img {
     transform: scale(1.05);
+}
+
+.accordianSwiper .swiper-button-prev {
+    left: -100%;
+}
+
+.accordian_cards .swiper-button-next, .accordian_cards .swiper-button-prev {
+    color: var(--accent-orange);
 }
 
 .fixedBtn {
