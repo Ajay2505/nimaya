@@ -245,16 +245,16 @@
                         </div>
                         
                         <div class="swiper-slide">
-                            <div class="row">
+                            <div class="row inputImagesWrapper">
                                 <div class="col-lg-6 mx-auto">
                                     <form class="px-lg-5 px-3 main_form" id="batchForm">
                                         <h5 class="modal-title" id="registerModalLabel">Select Preferred Batch:</h5>
                                         <br>
-                                        <select required name="" id="">
+                                        <select required name="" id="switchInput">
                                             <option value="0" selected disabled>Batch</option>
-                                            <option value="1">9th December 2023 to 13th January 2024</option>
-                                            <option value="2">18th December 2023  to 22nd January 2024</option>
-                                            <option value="3">6th January 2024 to 10th February 2024</option>
+                                            <option value="batch-1">9th December 2023 to 13th January 2024</option>
+                                            <option value="batch-2">18th December 2023  to 22nd January 2024</option>
+                                            <option value="batch-3">6th January 2024 to 10th February 2024</option>
                                         </select> 
                                         <h5>Declaration:</h5>
                                         <div class="d-flex gap-3">
@@ -274,14 +274,18 @@
                                     <button id="backToRegister" class="btn_main m-0 mt-lg-5 mt-3 ms-auto">Back to Previous page</button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="img_wrapper">
-                                        <img src="https://www.incorlakecity.com/assets/images/floor-plans/2bhk-tower2-west-facing.jpg" alt="">
+                                    <div class="img_wrapper imgSwitchWrapper">
+                                        <img class="active" data-batch="batch-1" src="../images/batch-1.png" alt="">
+                                        <img class="d-none" data-batch="batch-2" src="../images/batch-2.png" alt="">
+                                        <img class="d-none" data-batch="batch-3" src="../images/batch-3.png" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
             </div>
           </div>
         </div>

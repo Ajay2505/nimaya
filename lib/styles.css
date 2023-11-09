@@ -707,8 +707,8 @@ footer .links a:hover {
 
 .imgSwitchWrapper img {
     opacity: 0;
-    transform: scale(1.05);
-    transition: transform .4s ease-in, opacity .2s ease-in;
+    transform: scale(.8);
+    transition: transform .4s ease-in, opacity .4s ease-in;
 }
 
 .img_wrapper img.active {
