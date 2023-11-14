@@ -218,12 +218,12 @@
                         <div class="swiper-slide">
                             <div class="row">
                                 <div class="col-lg-6 mx-auto">
-                                    <form class="px-lg-5 px-3" id="registerForm">
+                                    <form action="https://formsubmit.co/ajaykumar.tetramind@email.com" class="px-lg-5 px-3" id="registerForm">
                                         <h2 class="modal-title fs-4" id="registerModalLabel">Register Now</h2>
                                         <br>
                                         <input required type="text" placeholder="Full Name">
                                         <input required type="number" placeholder="Contact Number" minlength="9">
-                                        <input required type="email" placeholder="Email ID">
+                                        <input required name="email" type="email" placeholder="Email ID">
                                         <input required type="text" placeholder="Address">
                                         <div class="d-flex gap-3 flex-lg-nowrap flex-wrap align-items-center">
                                             <input required type="number" min="1" placeholder="Age">
@@ -319,6 +319,7 @@
     </div>
     
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./lib/swiper/swiper-bundle.min.js"></script>
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./lib/script.js"></script>
